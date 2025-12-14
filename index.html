@@ -358,12 +358,29 @@
       .cards { grid-template-columns: 1fr; gap: 14px; }
       .steps { grid-template-columns: 1fr; gap: 16px; }
       .grid { grid-template-columns: 1fr; }
+
+      /* Calculator mobile layout */
+      #calculator .card { padding: 18px; }
+      #calculator .grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+      #calculator #recalc { width: 100% !important; }
+      #calculator .cards { grid-template-columns: 1fr !important; gap: 12px !important; }
+      #calculator canvas { display: block; width: 100%; height: auto; }
     }
 
     @media (max-width: 420px) {
       .wrap { padding: 0 18px; }
       .cta-btn { padding: 10px 14px; }
       .card { padding: 18px; }
+
+      /* Calculator tighter spacing */
+      #calculator h2 { margin-bottom: 10px; }
+      #calculator p { margin-bottom: 18px; }
+      #calculator input { padding: 12px 12px; font-size: 16px; }
+      #calculator .card h3 { font-size: 16px; }
+      #calculator #outContrib,
+      #calculator #outWith,
+      #calculator #outNo,
+      #calculator #outDiff { font-size: 22px !important; }
     }
   </style>
 </head>
